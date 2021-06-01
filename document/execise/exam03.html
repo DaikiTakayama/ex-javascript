@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>・趣味は何ですか？
+        <select id='select-hobby'>
+        <option selected='selected'  value='0'>--</option>
+        <option value='1'>トライアスロン</option>
+        <option value='2'>その他</option>
+        </select>
+
+    </p>
+
+    <div id='selected-triathlon'>
+        <p>・それでは好きな種目は？
+            <input type="radio" id="select-swim">Swim
+            <input type="radio" id="select-bike">Bike
+            <input type="radio" id="select-run">Run
+        </p>
+    </div>
+
+    <div id='selected-other'>
+        <p>
+            ・それでは何が好き？
+            <input type="text" id="input-hobby">
+        </p>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script>
+        'use strict'
+        console.log($('#select-hobby').val())
+        $('#selected-triathlon').hide()
+        $('#selected-other').hide()
+
+        $(document).on('change', '#select-hobby', function() {
+            console.log($('#select-hobby').val())
+
+            if ($('#select-hobby').val() == '1') {
+
+                $('#selected-other').hide()
+                $('#selected-triathlon').show()
+
+            } else if ($('#select-hobby').val() == '2') {
+
+                $('#selected-triathlon').hide()
+                $('#selected-other').show()
+
+            } else {
+                $('#selected-triathlon').hide()
+                $('#selected-other').hide()
+            }
+        });
+    </script>
+</body>
+
+</html>
