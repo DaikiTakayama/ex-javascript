@@ -60,10 +60,19 @@
 // }
 // console.log(sum)
 
-let arrayNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-let sum = 0
-for (let num of arrayNum) {
-    if (num % 2 == 1) {
-        console.log(num)
-    }
+// let arrayNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// let sum = 0
+// for (let num of arrayNum) {
+//     if (num % 2 == 1) {
+//         console.log(num)
+//     }
+// }
+
+let countries = {
+    '日本': '東京',
+    'スリランカ': 'スリジャヤワルダナプラコッテ',
+    'タイ': 'クルンテープ・マハーナコーン・アモーンラッタナコーシン・マヒンタラアユッタヤー・マハーディロッカポップ・ノッパラッターナラーチャタニーブリーロム・ウドンラーチャニウェットマハーサターン・アモーンラピーンアワターンサティット・サッカタットティヤウィサヌカムプラシット'
 }
+
+console.log(countries['日本'])
+console.log(countries['タイ'])
