@@ -37,18 +37,33 @@
 
 
 
-let answerWriteLine = ""
-for (let i = 1; i <= 9; i++) {
-    let answer = 0;
-    for (let j = 1; j <= 9; j++) {
-        answer = i * j;
-        if (answer < 10) {
-            answer += ' ' + answer
-        }
-        answerWriteLine += answer + ' ';
+// let answerWriteLine = ""
+// for (let i = 1; i <= 9; i++) {
+//     let answer = 0;
+//     for (let j = 1; j <= 9; j++) {
+//         answer = i * j;
+//         if (answer < 10) {
+//             answer += ' ' + answer
+//         }
+//         answerWriteLine += answer + ' ';
 
+//     }
+//     answerWriteLine += '\n'
+
+// }
+// console.log(answerWriteLine)
+
+// let arrayNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// let sum = 0
+// for (let num of arrayNum) {
+//     sum += num
+// }
+// console.log(sum)
+
+let arrayNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let sum = 0
+for (let num of arrayNum) {
+    if (num % 2 == 1) {
+        console.log(num)
     }
-    answerWriteLine += '\n'
-
 }
-console.log(answerWriteLine)
