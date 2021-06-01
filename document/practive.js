@@ -27,9 +27,28 @@
 // } else if (age >= 65) {
 //     console.log("高年期")
 // }
-let sum = 0
-for (let index = 1; index <= 10; index++) {
-    sum += index;
+
+// let sum = 0
+// for (let index = 1; index <= 10; index++) {
+//     sum += index;
+
+// }
+// console.log(sum)
+
+
+
+let answerWriteLine = ""
+for (let i = 1; i <= 9; i++) {
+    let answer = 0;
+    for (let j = 1; j <= 9; j++) {
+        answer = i * j;
+        if (answer < 10) {
+            answer += ' ' + answer
+        }
+        answerWriteLine += answer + ' ';
+
+    }
+    answerWriteLine += '\n'
 
 }
-console.log(sum)
+console.log(answerWriteLine)
