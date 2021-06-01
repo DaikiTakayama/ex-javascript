@@ -21,5 +21,10 @@ function multi(num1, num2) {
 function div(num1, num2) {
     return (num1 / num2)
 }
+let printNameVariable = function() {
+    console.log("だいき")
+}
+
+
 
 console.log(add(5, 3))
